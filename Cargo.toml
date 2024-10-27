@@ -1,0 +1,18 @@
+[package]
+name = "supermarket_inventory"
+version = "0.1.0"
+edition = "2021"
+
+[dependencies]
+ic-cdk = "0.6.10"
+ic-cdk-macros = "0.6.10"
+serde = { version = "1.0", features = ["derive"] }
+serde_json = "1.0"
+candid = "0.8"
+time = "0.3"  # For timestamps
+
+[lib]
+crate-type = ["cdylib"]
+
+[target.wasm32-unknown-unknown]
+linker = "rust-lld"
