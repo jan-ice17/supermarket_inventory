@@ -91,7 +91,6 @@ impl SupermarketManager {
     }
 }
 
-
 use std::cell::RefCell;
 
 // Create a thread-local variable for the SupermarketManager.
